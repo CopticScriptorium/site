@@ -1,0 +1,439 @@
+@font-face {
+    font-family: 'antinoouRegular';
+    src: url('antinoou-webfont.eot');
+    src: url('antinoou-webfont.eot?#iefix') format('embedded-opentype'),
+         url('antinoou-webfont.woff') format('woff'),
+         url('antinoou-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'antinoouItalic';
+    src: url('antinoouitalic-webfont.eot');
+    src: url('antinoouitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('antinoouitalic-webfont.woff') format('woff'),
+         url('antinoouitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+	font: 60px Verdana, Arial, sans-serif, serif; color: #886655; vertical-align: bottom; padding-bottom: 5x;
+}
+
+
+h2 {
+	font: 40px Verdana, Arial, sans-serif;
+}
+h3 {
+	font: 26px Verdana, Arial, sans-serif;
+}
+
+h4 {
+	font: 22px Verdana, Arial, sans-serif;
+	color: darkblue;
+}
+p, ul, ol, li, table {font: 12px/18px Verdana, Arial, sans-serif;}
+
+
+body{font: 12px Arial, Helvetica, sans-serif;}
+
+.line {
+position:absolute; /* doesn't have to be absolute */
+z-index: -2;         /* places the line behind other elements */
+}
+
+}  
+.line_down {
+position:absolute; /* doesn't have to be absolute */
+z-index: 1;         /* places the line behind other elements */
+}
+
+.line_down div {
+position:absolute;
+left: 0px; top: 0px;
+border-right-color: transparent;
+border-left-width: 0;
+border-style: solid;
+padding: 0px;
+margin: 0px;
+}
+
+
+
+/*navigation*/
+.navbox {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+li {
+	margin: 5px 0 0 0;
+}
+
+ul.nav {
+    list-style: none;
+    display: block;
+    width: 200px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 60px 0 60px 0;
+	
+    background: url(img/shad2.png) no-repeat;
+    -webkit-background-size: 50% 100%;
+}
+
+ul.nav li a {
+background-color: red;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+ul.nav li a {
+    -webkit-transition: all 0.3s ease-out;
+    background: #cbcbcb url(img/border.png) no-repeat;
+    color: #174867;
+    padding: 7px 15px 7px 15px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 2px 4px #888;
+}
+
+ul.nav li a:hover {
+    background: grey url(img/border.png) no-repeat;
+    color: white;
+    padding: 7px 15px 7px 30px;
+}
+
+.arrow{
+        border-top : 30px solid transparent;
+    border-bottom : 30px solid transparent;
+    border-left : 30px solid black;
+                  width:0;
+                  height:0;
+				  position: relative;
+				  top: 75px;
+				  left:5px;
+				  
+    }
+	
+.arrow_container {
+	
+	float: left;
+	margin-bottom: 10px;
+	width: 40px;
+	height: 250px;
+	border: solid;
+	border-color: white;
+
+
+
+	
+}
+
+
+.image_container{ font: 16px Verdana, Arial, sans-serif; color:black;padding:10px;background:white; float:left; border-bottom: solid; border-right:solid; border-width:1px; }
+
+.canvas_container {
+	float: left;
+	border:solid;
+	height:250px;
+	margin-bottom:10px;
+}
+
+table.anno_doc th{
+	
+	border-bottom: navy solid thin;
+	border-top: navy solid thin;
+	text-align: left;
+	border-right: none;
+	font-weight: bold;
+	white-space: nowrap;
+	padding: 5px;
+}
+
+table.anno_doc {
+
+	margin-left: 20px;
+
+}
+
+.hu_logo{
+	
+
+	z-index:-4;
+	/*background: url('img/HU_logo_smaller.gif');
+	position: absolute;*/
+	float:left;
+	background-repeat: no-repeat;
+	background-position: right top;
+	height:195px;
+	display:table-cell;
+	width: 95%;
+	top: 0;
+	vertical-align: top;
+}
+
+.icon{
+    width: 40px;
+    height: auto;
+    border: 0px;
+    
+    }
+
+.d1_table {
+    border-collapse: collapse;
+    padding: 0px;
+    border-spacing: 0px;
+}
+.dl_table td{
+    text-align:center;
+    border-bottom: dashed;
+    border-bottom-width: 1px;
+    
+    
+    }
+
+
+.dl_table th{
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    
+}
+
+.shadow {
+	padding-left: 10px; padding-right:10px; padding-bottom:20px;
+	margin:50px;
+	max-width: 80%;
+	display: block;
+	border: 2px solid #326082;
+  -moz-box-shadow:    -5px -5px 5px #326082;
+  -webkit-box-shadow: -5px -5px 5px #326082;
+  box-shadow:         -5px -5px 5px #326082;
+}
+
+.example_box{
+	margin:50;
+	display: block;
+	border: 2px solid;
+	background-color: #EFF8FF;
+	max-width: 80%;
+	padding: 10px;
+}
+.example_box ul li{margin-left:-10px}
+
+.example_box ul li{padding-bottom:15px}
+
+.example_box ul li img{padding-top:5px; margin-left:10px}
+
+.anti{font-family: antinoouRegular, sans-serif;}
+
+tt{padding-left: 5px; padding-top: 5px}
+
+.hidden { display: none; }
+.unhidden { display: block; } 
+
+
+/*
+ * Adapted from: CSS3 Treeview. No JavaScript
+ * @version 1.0
+ * @author Martin Ivanov (original version)
+ * @url developer's website: http://wemakesites.net/
+ * @url developer's twitter: https://twitter.com/#!/wemakesitesnet
+ * @url developer's blog http://acidmartin.wordpress.com/
+ **/
+ 
+/*
+ * This solution works with all modern browsers and Internet Explorer 9+. 
+ * If you are interested in purchasing a JavaScript enabler for IE8 
+ * for the CSS3 Treeview, please, check this link:
+ * http://experiments.wemakesites.net/miscellaneous/acidjs-css3-treeview/
+ **/
+
+ 
+.css-treeview ul,
+.css-treeview li
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+	vertical-align:middle;
+}
+ 
+.css-treeview input
+{
+    position: absolute;
+    opacity: 0;
+}
+ 
+.css-treeview
+{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+	margin-left: 20px;
+
+
+}
+ 
+.css-treeview a
+{
+    color: #00f;
+    text-decoration: none;
+}
+ 
+.css-treeview a:hover
+{
+    text-decoration: underline;
+}
+ 
+.css-treeview input + label + ul
+{
+    margin: 0 0 0 22px;
+}
+ 
+.css-treeview input ~ ul
+{
+    display: none;
+}
+ 
+.css-treeview label.folder,
+.css-treeview label.folder::before
+{
+    cursor: pointer;
+}
+ 
+.css-treeview input:disabled + label.folder
+{
+    cursor: default;
+    opacity: .6;
+}
+ 
+.css-treeview input:checked:not(:disabled) ~ ul
+{
+    display: block;
+}
+ 
+.css-treeview label.folder,
+.css-treeview label.folder::before
+{
+    background: url("img/folder.png") no-repeat;
+	    height: 22px;
+
+}
+ 
+.css-treeview label,
+.css-treeview label::before
+{
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+	
+}
+ 
+.css-treeview label.folder
+{
+	    background-position: 18px 0px;
+
+}
+ 
+.css-treeview label.folder::before
+{
+    content: "";
+    width: 32px;
+    margin: 0 22px 0 0;
+    vertical-align: middle;
+    background-position: 0 -10px;
+}
+ 
+.css-treeview input.folder:checked + label.folder::before
+{
+    background: url("img/icons.png") no-repeat;
+    background-position: 0 6px;
+}
+ 
+/* webkit adjacent element selector bugfix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    .css-treeview 
+    {
+        -webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
+    }
+ 
+    @-webkit-keyframes webkit-adjacent-element-selector-bugfix 
+    {
+        from 
+        { 
+            padding: 0;
+        } 
+        to 
+        { 
+            padding: 0;
+        }
+    }
+}
+
+.css-treeview input.doc + label.doc::before,
+.css-treeview input.dl + label.dl::before
+{
+    content: "";
+    width: 16px;
+    margin: 0 6px 0 0;
+    vertical-align: middle;
+	height: 22px;
+	
+
+    background-position: 0 0px;
+}
+.css-treeview input.folder + label.folder::before
+{
+    content: "";
+    width: 16px;
+    margin: 0 22px 0 0;
+    vertical-align: middle;
+	
+    background: url("img/icons.png") no-repeat;
+
+    background-position: 0 -10px;
+}
+.css-treeview label.doc, .css-treeview label.dl
+{
+    background-position: 9px 0;
+	height: 22px;
+	padding: 0 0 3px 0;
+
+}
+
+.css-treeview label.doc::before
+{
+    background: url("img/doc.png") no-repeat;
+}
+
+.css-treeview label.dl::before
+{
+    background: url("img/download.gif") no-repeat;
+	
+}
+
+li.info {
+background:url(img/i_button.gif) no-repeat 0 5px; 
+padding: 0 0 3px 22px;
+height: 22px;
+}
+li.search {
+background:url(img/search.gif) no-repeat 0 5px; 
+padding: 0 0 3px 22px;
+height: 22px;
+}
+
+.example_queries li {
+margin-top: 1em;
+}

@@ -36,3 +36,4 @@ font-family: antinoouRegular, sans-serif; width: 500px; white-space: normal !imp
 .word{ white-space: inherit; }
 .word:after{ content:" " }
 .norm{  text-indent: -5px;text-align: left }
+.page:before{color: blue; font-style: italic; content: " [" attr(page) "] ";}

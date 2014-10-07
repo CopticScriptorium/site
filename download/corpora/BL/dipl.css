@@ -21,7 +21,7 @@
 }
 
 .htmlvis {
-font-family: Antinoou, sans-serif;
+font-family: antinoouRegular, sans-serif;
 counter-reset: line 0;
 }
 div.copt_line[line="1"]{text-indent:20px;}

@@ -21,7 +21,7 @@
 }
 
 div.htmlvis {
-font-family: Antinoou, sans-serif;
+font-family: antinoouRegular, sans-serif;
 width: 500px; white-space: normal !important;
 counter-reset: verse 0;
 }

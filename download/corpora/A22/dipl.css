@@ -21,7 +21,7 @@
 }
 
 .htmlvis {
-font-family: Antinoou, sans-serif;
+font-family: antinoouRegular, sans-serif;
 counter-reset: line 0;
 }
 div.line:nth-of-type(5n):before{content:counter(line)" "}

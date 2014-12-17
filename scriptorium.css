@@ -56,6 +56,7 @@ p, ul, ol, li, table {font: 12px/18px Verdana, Arial, sans-serif;}
 body{
 	font: 12px Arial, Helvetica, sans-serif;
 	background-color:#D77850;
+    margin: 0px;
 	}
 
 .line {
@@ -82,6 +83,78 @@ margin: 0px;
 
 
 /*navigation*/
+
+#nav {
+display:inline-block; /* centers modern browsers */
+padding-top: 20px;
+padding-bottom: 15px;
+padding-left: 0px;
+margin-top: -30px;
+text-align:center; /* centers IE6/7 */
+position: fixed;
+background-color: #3E3226;
+width: 100%;
+
+}
+#nav ul {
+    list-style:none;
+    text-align: center;
+    display: block;
+/* IE6/7 haslayout trip-switch */
+}
+#nav li {
+    margin:auto;
+    display:inline-block;
+    color:#ffffff;
+    font-size: 16px;
+}
+
+#nav li ul {
+    position: absolute;
+    margin-top: 10px;
+    padding-left: 0px;
+    padding-top: 20px;
+    margin-left: 0px;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    width: auto;
+    padding-bottom: 20px;
+    overflow: 
+}
+
+#nav li ul li { 
+  background: #3E3226; 
+  display: block; 
+  color: #fff;
+  text-align: left;
+  padding-left: 0px;
+  padding-bottom: 30px;
+}
+
+
+
+#nav li ul li:hover{
+    color:#DFD1B4;
+}
+
+#nav li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+#nav a {
+float:left;
+text-decoration:none; 
+padding:0 30px; /* variable width */
+color:#ffffff;
+}
+
+#nav a:hover{
+    color:#DFD1B4;
+}
+
 .navbox {
 	position: absolute;
 	left: 0;

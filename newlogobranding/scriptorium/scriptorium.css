@@ -103,7 +103,7 @@ body {
 }
 
 #header {
-	height: 100px;
+	height: 150px;
 	width: 800px;
 	z-index: 2;
 	margin-left: auto;
@@ -127,7 +127,7 @@ body {
 }
 
 #sponsors {
-	background-color: hsla(0,0%,100%,1.00);
+	background-color: hsla(0,100%,100%,0);
 	padding-left: 6px;
 	padding-right: 6px;
 	padding-top: 6px;
@@ -587,4 +587,14 @@ margin-top: 1em;
 .download {
   background: url("img/download.gif") no-repeat;
   padding-left: 21px;
+}
+.github {
+  background: url("img/GitHub-Mark-32px.png") no-repeat;
+  background-size: 22px 22px;
+  padding-left: 25px;
+}
+.twitter {
+  background: url("img/socialicon32.png") no-repeat;
+  background-size: 22px 22px;
+  padding-left: 25px;
 }

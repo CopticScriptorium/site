@@ -1,12 +1,19 @@
-<div id="footer"><div id="sponsors">
-      <img alt="Seal of the University of the Pacific"  src="img/Seal_Orange_RGB.png" height="62px" longdesc="http://www.pacific.edu"/>&nbsp;&nbsp;&nbsp;<img src="img/Georgetown_university_seal.gif" width="52" height="62px" alt="GeorgetownUniversitySeal" longdesc="http://www.georgetown.edu"/>&nbsp;&nbsp;&nbsp;       <img src="img/nehlogo.png" width="252" height="62" alt="neh logo" longdesc="http://www.neh.gov"/></div>
-  
-  <br />
-  Coptic Scriptorium is supported by the <a href="http://www.neh.gov" target="_blank">National Endowment for the Humanities</a> <a href="http://www.neh.gov/divisions/odh" target="_blank">Office of Digital Humanities</a> and <a href="http://www.neh.gov/divisions/preservation" target="_blank">Division of Preservation and Access</a>, the <a href="www.pacific.edu" target="blank">University of the Pacific</a>, and <a href="http://www.georgetown.edu" target="_blank">Georgetown University</a>.<br /><br />
-    <a href="https://github.com/CopticScriptorium"><img src="img/GitHub-Mark-32px.png" alt="GitHub_mark" longdesc="www.github.com"/></a><a href="https://github.com/CopticScriptorium" target="new"> Fork us on GitHub</a>!<br />
+<div id="footer">
+Coptic Scriptorium is supported by the <a href="http://www.neh.gov" target="_blank">National Endowment for the Humanities</a> <a href="http://www.neh.gov/divisions/odh" target="_blank">Office of Digital Humanities</a> and <a href="http://www.neh.gov/divisions/preservation" target="_blank">Division of Preservation and Access</a>, the <a href="www.pacific.edu" target="blank">University of the Pacific</a>, and <a href="http://www.georgetown.edu" target="_blank">Georgetown University</a>.
+<br />
+  <br /><br />
+  <div id="sponsors">
+      <img alt="Seal of the University of the Pacific"  src="img/Seal_White_RGB.png" height="62px" longdesc="http://www.pacific.edu"/>&nbsp;&nbsp;&nbsp;<img src="img/Georgetown_university_seal.png" width="52" height="62px" alt="GeorgetownUniversitySeal" longdesc="http://www.georgetown.edu"/>&nbsp;&nbsp;&nbsp;       <img src="img/neh_logo_horizontal_4cprev_u-0.png" width="252" height="62" alt="neh logo" longdesc="http://www.neh.gov"/></div>
       <br />
-        <a href="https://www.facebook.com/carrieschroeder1" target="_blank"><img src="img/socialicon32.png" width="32" height="32" alt=""/></a> Follow Carolyn on <a href="https://www.facebook.com/carrieschroeder1" target="_blank">Facebook</a> and <a href="https://twitter.com/ctschroeder" target="_blank">Twitter</a><br />
+        
       <br />
-  Page last updated 19 December 2014
+  <div id="lastupdate"></div>
+  <script>
+  $(function(){
+      var modiDate = new Date(document.lastModified);
+      var showAs = (modiDate.getMonth() + 1) + "-" + modiDate.getDate() + "-" + modiDate.getFullYear();
+      $("#lastupdate").html("Page last updated: " + showAs);
+  });
+  </script>
     
   </div>

@@ -54,9 +54,9 @@ project is licensed under the <a rel="license" href="http://creativecommons.org/
   <h4>Searching the Corpora: Example Queries</h4>
   <p>The search and visualization tool ANNIS is the most powerful way to use the texts for research purposes.  We've provided some sample queries below to demonstrate some of the kinds of searches you may construct.  ANNIS queries use either regular expressions or the ANNIS query language.  If you are familiar with ANNIS or regular expressions, jump right in.  If not, you may wish to try some of the sample queries and then substitute terms or search parameters to adapt them to your needs and learn the system. After clicking on the magnifying glass, you will be taken to a new page with the ANNIS query and results. The query will appear in the box on the upper left. The corpus/corpora you are searching will be selected on the lower left. And your search results will appear in the panel on the right.</p>
   
-    <div class="css-treeview">
-  <ul>
-    <li><input class="folder" type="checkbox" id="ex-q" /><label class="folder" for="ex-q">
+    <div class="css-treeview" style="margin-left:0px">
+  <ul class="info">
+    <li><input class="folder" type="checkbox" id="ex-q" style="position:fixed"/><label class="folder" for="ex-q">
   Click here for the example queries (click the magnifying glass next to each query to get started). </label>
   <ul  class="example_queries">
     <li> Search for <strong>Greek verbs</strong> in multiple corpora: <br/>
@@ -79,20 +79,22 @@ project is licensed under the <a rel="license" href="http://creativecommons.org/
   </li>
   </ul>
 </div>
+</br>
 </div>
 
   <h3>Acephalous Work 22 by Shenoute</h3>
   <div class="css-treeview">
   <ul class="tree-container">
-    <li class="info"><a href="FAQ.html#A22" target="_blank">About the corpus</a></li>
-    <li class="info"><a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=c2hlbm91dGUuYTIy" target="new">Search the corpus in ANNIS</a> (click <a href="FAQ.html#font" target="new">here</a> if the Coptic characters do not appear properly)</li>
-    <li class="info"><a href="https://github.com/CopticScriptorium/corpora/releases/latest" target="new">Download the latest stable release of the entire corpus in in PAULA XML, relANNIS, and TEI XML as zip file.</a></li>
+    <li class="info"><a href="FAQ.html#A22" target="_blank" class="about">About the corpus</a></li>
+    <li class="info"><a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=c2hlbm91dGUuYTIy" target="new" class="search">Search the corpus in ANNIS</a> (click <a href="FAQ.html#font" target="new">here</a> if the Coptic characters do not appear properly)</li>
+    <li class="info"><a href="https://github.com/CopticScriptorium/corpora/releases/latest" target="new" class="download">Download the latest stable release of the entire corpus in in PAULA XML, relANNIS, and TEI XML as zip file.</a></li>
     <li class="info"><input class="folder" type="checkbox" id="a22-top" style="position:fixed"/><label class="folder" for="a22-top">Individual documents in TEI XML as well as diplomatic and normalized versions in HTML:</label>
       <ul>
         <li><input class="doc" type="button" id="item-a22-1"/><label class="doc" for="item-a22-1">Shenoute.A22.YA421-28: <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/shenoute-a22/shenoute.a22_TEI/Shenoute.A22.YA421-428_TEI.xml" target="_blank">download TEI XML</a>, HTML: <a href="download/corpora/A22/Shenoute.A22.YA421-428_dipl.html" target="_blank">diplomatic</a>, <a href="download/corpora/A22/Shenoute.A22.YA421-428_norm.html" target="_blank">normalized</a></label></li>
           <li><input class="doc" type="button" id="item-a22-2"/><label class="doc" for="item-a22-2">Shenoute.A22.YA517-18: <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/shenoute-a22/shenoute.a22_TEI/Shenoute.A22.YA517-518_TEI.xml" target="_blank">download TEI XML</a>, HTML: <a href="download/corpora/A22/Shenoute.A22.YA517-518_dipl.html" target="_blank">diplomatic</a>, <a href="download/corpora/A22/Shenoute.A22.YA517-518_norm.html" target="_blank">normalized</a></label></li>
       </ul>
     </li>
+    <li class="info"><label class="doc" for="aof-chart"></label></li>
 
   </ul>
   </div>
@@ -100,13 +102,10 @@ project is licensed under the <a rel="license" href="http://creativecommons.org/
   <h3>Abraham Our Father by Shenoute</h3>
     <div class="css-treeview">
   <ul>
-    <li class="info"><a href="FAQ.html#aof" target="new">About the corpus</a></li>
-    <li class="search"><a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=c2hlbm91dGUuYWJyYWhhbS5vdXIuZmF0aGVy" target="new">Search the corpus in ANNIS</a> (click <a href="FAQ.html#font" target="new">here</a> if the Coptic characters do not appear properly)</li>
-    <li><input class="dl" type="button"  id="aof-dl"/><label class="dl" for="aof-dl"><a href="https://github.com/CopticScriptorium/corpora/releases/latest" target="new">Download the latest stable release of the entire corpus in in PAULA XML, relANNIS, and TEI XML as zip file.</a></label></label> </li>
-    </li>
-        <br/>
-    <!--<li>Metadata record (<a href="">LAUDATIO</a>)</li>-->
-    <li><input class="folder" type="checkbox" id="aof-top" />
+    <li class="info"><a href="FAQ.html#aof" target="_blank" class="about">About the corpus</a></li>
+    <li class="info"><a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=c2hlbm91dGUuYWJyYWhhbS5vdXIuZmF0aGVy" target="new" class="search">Search the corpus in ANNIS</a> (click <a href="FAQ.html#font" target="new">here</a> if the Coptic characters do not appear properly)</li>
+    <li class="info"><a href="https://github.com/CopticScriptorium/corpora/releases/latest" target="new" class="download">Download the latest stable release of the entire corpus in in PAULA XML, relANNIS, and TEI XML as zip file.</a></label> </li>
+    <li class="info"><input class="folder" type="checkbox" id="aof-top" style="position:fixed"/>
     <label class="folder" for="aof-top">Individual documents in TEI XML as well as diplomatic and normalized versions in HTML:</label><br /><br />
     <ul>
       <li><input type="button" class="doc" id="aof-1"/><label class="doc" for="aof-1">Abraham.YA518-20:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/abraham/shenoute.abraham.our.father_TEI/Abraham.YA518-520_TEI.xml" target="_blank">download TEI XML</a>, HTML: <a href="download/corpora/AOF/Abraham.YA518-20_dipl.html" target="_blank">diplomatic</a>, <a href="download/corpora/AOF/Abraham.YA518-20_norm.html" target="_blank">normalized</a>, <a href="download/corpora/AOF/Abraham.YA518-20_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>)</li>
@@ -118,68 +117,52 @@ project is licensed under the <a rel="license" href="http://creativecommons.org/
       <li><input type="button" class="doc" id="aof-7"/><label class="doc" for="aof-7">Abraham.XL93-94:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/abraham/shenoute.abraham.our.father_TEI/Abraham.XL93-94_TEI.xml" target="_blank">download TEI XML</a>, HTML: <a href="download/corpora/AOF/Abraham.XL93-94_dipl.html" target="_blank">diplomatic</a>, <a href="download/corpora/AOF/Abraham.XL93-94_norm.html" target="_blank">normalized</a>, <a href="download/corpora/AOF/Abraham.XL93-94_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>)</li>
     </ul>
   </li>
-    <br/>
-    <li><input type="button" class="doc" id="aof-chart"/><label class="doc" for="aof-chart">HTML <a href="AbrahamOurFatherParallels.html">chart of manuscript parallels</a></label></li>
+    <li class="info"><label class="doc" for="aof-chart">HTML <a href="AbrahamOurFatherParallels.html">chart of manuscript parallels</a></label></li>
   </ul>
     </div>
 
   <h3>Not Because A Fox Barks by Shenoute</h3>
     <div class="css-treeview">
   <ul>
-    <li class="info"><a href="FAQ.html#fox" target="new">About the corpus</a></li>
-    <li class="search"><a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=c2hlbm91dGUuZm94" target="new">Search the corpus in ANNIS</a> (click <a href="FAQ.html#font" target="new">here</a> if the Coptic characters do not appear properly)</li>
-    <li><input class="dl" type="button"  id="fox-dl"/><label class="dl" for="fox-dl"><a href="https://github.com/CopticScriptorium/corpora/releases/latest" target="new">Download the latest stable release of the entire corpus in in PAULA XML, relANNIS, and TEI XML as zip file. </a></label>
+    <li class="info"><a href="FAQ.html#fox" target="new" class="about">About the corpus</a></li>
+    <li class="info"><a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=c2hlbm91dGUuZm94" target="new" class="search">Search the corpus in ANNIS</a> (click <a href="FAQ.html#font" target="new">here</a> if the Coptic characters do not appear properly)</li>
+    <li class="info"><a href="https://github.com/CopticScriptorium/corpora/releases/latest" target="new" class="download">Download the latest stable release of the entire corpus in in PAULA XML, relANNIS, and TEI XML as zip file. </a>
     </li>
-    </ul>
-  <p></p>
-  <ul>
-    </li>
-    <br/>
-    <!--<li>Metadata record (<a href="">LAUDATIO</a>)</li>-->
-    <li><input class="folder" type="checkbox" id="fox-top" />
+    
+    <li class="info"><input class="folder" type="checkbox" id="fox-top" style="position:fixed"/>
     <label class="folder" for="fox-top">Individual documents in TEI XML as well as diplomatic and normalized versions in HTML:</label><br /><br />
     <ul>
       <li><input type="button" class="doc" id="aof-1"/><label class="doc" for="aof-1">Fox.XH204-216</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/shenoute-fox/shenoute.fox_TEI/shenoute.fox.XH204-216_TEI.xml" target="_blank">download TEI XML</a>, HTML: <a href="download/corpora/Fox/shenoute.fox.XH204-216_dipl.html" target="_blank">diplomatic</a>, <a href="download/corpora/Fox/shenoute.fox.XH204-216_norm.html" target="_blank">normalized</a>, <a href="download/corpora/Fox/shenoute.fox.XH204-216_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>)</li>
     </ul>
     </li>
-    <br/>
     </ul>
       </div>
 
   <h3>Letters of Besa</h3>
   <div class="css-treeview">
   <ul>
-    <li class="info"><a href="FAQ.html#Besa" target="_blank">About the corpus</a></li>
-    <li class="search"><a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=YmVzYS5sZXR0ZXJz" target="_blank">Search the corpus in ANNIS</a> (click <a href="FAQ.html#font" target="new">here</a> if the Coptic characters do not appear properly)</li>
-      <ul>
-          <li><input class="dl" type="button" id="besa-dl1"/><label class="dl" for="besa-dl1"><a href="https://github.com/CopticScriptorium/corpora/releases/latest" target="new">Download the latest stable release of the entire corpus in in PAULA XML, relANNIS, and TEI XML as zip file.</a></label></li>
-      </ul>
-                  <br/>
-
-    <!--<li>Metadata record (<a href="">LAUDATIO</a>)</li>-->
-    <li><input class="folder" type="checkbox" id="besa-top" /><label class="folder" for="besa-top">Individual documents in TEI XML as well as diplomatic, normalized, and analytic versions in HTML (analytic works in Chrome or Safari only):</label><br /><br />
-      
+    <li class="info"><a href="FAQ.html#Besa" target="_blank" class="about">About the corpus</a></li>
+    <li class="info"><a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=YmVzYS5sZXR0ZXJz" target="_blank" class="search">Search the corpus in ANNIS</a> (click <a href="FAQ.html#font" target="new">here</a> if the Coptic characters do not appear properly)</li>
+    <li class="info"><a href="https://github.com/CopticScriptorium/corpora/releases/latest" target="new" class="download">Download the latest stable release of the entire corpus in in PAULA XML, relANNIS, and TEI XML as zip file.</a></li>
+    <li class="info"><input class="folder" type="checkbox" id="besa-top" style="position:fixed"/><label class="folder" for="besa-top">Individual documents in TEI XML as well as diplomatic, normalized, and analytic versions in HTML (analytic works in Chrome or Safari only):</label><br /><br />
     <ul>
       <li><input type="button" class="doc" id="besa-1"/><label class="doc" for="besa-1">Letter to Aphthonia:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/besa-letters/besa.letters_TEI/Besa.letters.to_Aphthonia_TEI.xml" target="_blank">download TEI XML</a>, HTML: <a href="download/corpora/BL/Besa.letters.to_Aphthonia_dipl.html" target="_blank">diplomatic</a>, <a href="download/corpora/BL/Besa.letters.to_Aphthonia_norm.html" target="_blank">normalized</a>, <a href="download/corpora/BL/Besa.letters.to_Aphthonia_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>) </li>
       <li><input type="button" class="doc" id="besa-2"/><label class="doc" for="besa-2">Letter to Thieving Nuns:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/besa-letters/besa.letters_TEI/Besa.letters.to_Thieving_Nuns_TEI.xml" target="_blank">download TEI XML</a>, HTML: <a href="download/corpora/BL/Besa.letters.to_thieving_nuns_dipl.html" target="_blank">diplomatic</a>, <a href="download/corpora/BL/Besa.letters.to_thieving_nuns_norm.html" target="_blank">normalized</a>, <a href="download/corpora/BL/Besa.letters.to_thieving_nuns_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>) </li>
     </ul>
   </li>
+
   </ul>
     </div> 
 
   <h3>Apophthegmata Patrum</h3>
   <div class="css-treeview">
   <ul>
-    <li class="search">Search the corpus in <a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=YXBvcGh0aGVnbWF0YS5wYXRydW0" target="_blank">ANNIS</a></li>
+    <li class="info"><a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=YXBvcGh0aGVnbWF0YS5wYXRydW0" target="_blank" class="search">Search the corpus in ANNIS</a></li>
+    <li class="info"><a href="https://github.com/CopticScriptorium/corpora/releases/latest" target="new" class="download">Download the latest stable release of the entire corpus in in PAULA XML, relANNIS, and TEI XML as zip file.</a>
+    </li>
+    <li class="info"><input class="folder" type="checkbox" id="ap-dl-top" style="position:fixed"/><label class="folder" for="ap-dl-top">Individual documents in TEI XML as well as diplomatic, normalized, and analytic versions in HTML (analytic works in Chrome or Safari only):</label><br /><br />
     <ul>
-          <li><input class="dl" type="button" id="ap-dl"/><label class="dl" for="ap-dl"><a href="https://github.com/CopticScriptorium/corpora/releases/latest" target="new">Download the latest stable release of the entire corpus in in PAULA XML, relANNIS, and TEI XML as zip file.</a></label> 
-          </li>
-    </ul>
-        <br/>
-    <!--<li>Metadata record (<a href="">LAUDATIO</a>)</li>-->
-      <li><input class="folder" type="checkbox" id="ap-dl-top" /><label class="folder" for="ap-dl-top">Individual documents in TEI XML as well as diplomatic, normalized, and analytic versions in HTML (analytic works in Chrome or Safari only):</label><br /><br />
-    <ul>
-        <li><input type="button" class="doc" id="ap-22"/><label class="doc" for="ap-22">AP.22.fragment:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/AP/apophthegmata.patrum_TEI/AP.22.fragment_TEI.xml" target="_blank">download TEI XML</a>, HTML: <a href="download/corpora/AP/AP.22.fragment_dipl.html" target="_blank">diplomatic</a>, <a href="download/corpora/AP/AP.22.fragment_norm.html" target="_blank">normalized</a>, <a href="download/corpora/AP/AP.22.fragment_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>)</li>
+        <li><input type="button" class="doc" id="ap-22" /><label class="doc" for="ap-22">AP.22.fragment:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/AP/apophthegmata.patrum_TEI/AP.22.fragment_TEI.xml" target="_blank">download TEI XML</a>, HTML: <a href="download/corpora/AP/AP.22.fragment_dipl.html" target="_blank">diplomatic</a>, <a href="download/corpora/AP/AP.22.fragment_norm.html" target="_blank">normalized</a>, <a href="download/corpora/AP/AP.22.fragment_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>)</li>
       <li><input type="button" class="doc" id="ap-23"/><label class="doc" for="ap-23">AP.23.isaac:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/AP/apophthegmata.patrum_TEI/AP.23.isaac_TEI.xml" target="_blank">download TEI XML</a>, HTML: <a href="download/corpora/AP/AP.23.isaac_dipl.html" target="_blank">diplomatic</a>, <a href="download/corpora/AP/AP.23.isaac_norm.html" target="_blank">normalized</a>, <a href="download/corpora/AP/AP.23.isaac_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>)</li>
       <li><input type="button" class="doc" id="ap-25"/><label class="doc" for="ap-25">AP.25.pambo:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/AP/apophthegmata.patrum_TEI/AP.25.pambo_TEI.xml" target="_blank">download TEI XML</a>, HTML: <a href="download/corpora/AP/AP.25.pambo_dipl.html" target="_blank">diplomatic</a>, <a href="download/corpora/AP/AP.25.pambo_norm.html" target="_blank">normalized</a>, <a href="download/corpora/AP/AP.25.pambo_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>)</li>
             <li><input type="button" class="doc" id="ap-26"/><label class="doc" for="ap-26">AP.26.cassian:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/AP/apophthegmata.patrum_TEI/AP.26.Cassian_TEI.xml" target="_blank">download TEI XML</a>, HTML: <a href="download/corpora/AP/AP.26.cassian_dipl.html" target="_blank">diplomatic</a>, <a href="download/corpora/AP/AP.26.cassian_norm.html" target="_blank">normalized</a>, <a href="download/corpora/AP/AP.26.cassian_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>)</li>
@@ -200,16 +183,14 @@ project is licensed under the <a rel="license" href="http://creativecommons.org/
   </div> 
 
   <h3>Bible</h3>
-  <p>Note: This corpus is derived from the Sahidica New Testament, which was released by Warren Wells and made available for free electronic distributionfor academic use only.  It is not licensed CC-BY; <a href="download/corpora/Mark/coptic_nt_sahidic.html" target="_blank">click here for Sahidica licensing information</a>.</p>
+  <p style="margin:0px">Note: This corpus is derived from the Sahidica New Testament, which was released by Warren Wells and made available for free electronic distributionfor academic use only.  It is not licensed CC-BY; <a href="download/corpora/Mark/coptic_nt_sahidic.html" target="_blank">click here for Sahidica licensing information</a>.</p>
     <div class="css-treeview">
-    <ul>
-    <li><input class="dl" type="button" id="mrk-dl"/><label class="dl" for="mrk-dl"><a href="https://github.com/CopticScriptorium/corpora/releases/latest" target="new">Download the latest stable release of the entire corpus in in PAULA XML, relANNIS, and TEI XML as zip file</a></label></li>
-    </ul>
-    <h4>Gospel of Mark</h4>
-  <ul>
-    <li class="search">Search the corpus in <a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=c2FoaWRpY2EubWFyaw&" target="_blank">ANNIS</a></li>
-      </li>
-<li><input class="folder" type="checkbox" id="mrk-top" />
+    <li class="info"><a href="https://github.com/CopticScriptorium/corpora/releases/latest" target="new" class="download">Download the latest stable release of the entire corpus in in PAULA XML, relANNIS, and TEI XML as zip file</a></li>
+    <li class="info">
+      <h3>Gospel of Mark</h3>
+    </li>
+    <li class="info"><a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=c2FoaWRpY2EubWFyaw&" target="_blank" class="search">Search the corpus in ANNIS</a></li>
+    <li class="info"><input class="folder" type="checkbox" id="mrk-top" style="position:fixed"/>
 <label class="folder" for="mrk-top">Individual documents in TEI XML; Chapter views of normalized text and analytic versions in HTML (analytic works in Chrome or Safari only): </label><br /><br />
     <ul>
       <li><input type="button" class="doc" id="mrk-1"/><label class="doc" for="mrk-1">Chapter 1:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/bible/sahidica.mark_TEI/Mark_1_TEI.xml" target="_blank">download TEI XML</a>, <a href="download/corpora/Mark/Sahidica.Mark1_chapter.html" target="_blank">chapter view</a>, <a href="download/corpora/Mark/Sahidica.Mark1_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>)</li>
@@ -225,13 +206,10 @@ project is licensed under the <a rel="license" href="http://creativecommons.org/
       <li><input type="button" class="doc" id="mrk-16"/><label class="doc" for="mrk-16">Chapter 16:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/bible/sahidica.mark_TEI/Mark_16_TEI.xml" target="_blank">download TEI XML</a>, <a href="download/corpora/Mark/Sahidica.Mark16_chapter.html" target="_blank">chapter view</a>, <a href="download/corpora/Mark/Sahidica.Mark16_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>)</li>
         </ul>
   </li>
-  </ul>
-    <h4>1 Corinthians</h4>
-  <ul>
-    <li class="search">Search the corpus in <a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=c2FoaWRpY2EuMWNvcmludGhpYW5z&" target="_blank">ANNIS</a></li>
-      </li>
-<li><input class="folder" type="checkbox" id="1cor-top" />
-<label class="folder" for="1cor-top">Individual documents in TEI XML; Chapter views of normalized text and analytic versions in HTML (analytic works in Chrome or Safari only):</label><br /><br />
+    <h3>1 Corinthians</h3>
+    <li class="info"><a href="http://corpling.uis.georgetown.edu/annis/scriptorium#_c=c2FoaWRpY2EuMWNvcmludGhpYW5z&" target="_blank" class="search">Search the corpus in ANNIS</a></li>
+    <li class="info"><input class="folder" type="checkbox" id="1cor-top" style="position:fixed"/>
+    <label class="folder" for="1cor-top">Individual documents in TEI XML; Chapter views of normalized text and analytic versions in HTML (analytic works in Chrome or Safari only):</label><br /><br />
     <ul>
       <li><input type="button" class="doc" id="1cor-1"/><label class="doc" for="1cor-1">Chapter 1:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/bible/sahidica.1corinthians_TEI/1Cor_01_TEI.xml" target="_blank">download TEI XML</a>, <a href="download/corpora/1Cor/Sahidica.1Cor1_chapter.html" target="_blank">chapter view</a>, <a href="download/corpora/1Cor/Sahidica.1Cor1_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>)</li>
       <li><input type="button" class="doc" id="1cor-2"/><label class="doc" for="1cor-2">Chapter 2:</label> <a href="https://raw.githubusercontent.com/CopticScriptorium/corpora/master/bible/sahidica.1corinthians_TEI/1Cor_02_TEI.xml" target="_blank">download TEI XML</a>, <a href="download/corpora/1Cor/Sahidica.1Cor2_chapter.html" target="_blank">chapter view</a>, <a href="download/corpora/1Cor/Sahidica.1Cor2_analytic.html" target="_blank">analytic</a> (part-of-speech analysis &amp; translation; <b>doesn't work in Firefox</b>)</li>

@@ -103,7 +103,7 @@ body {
 }
 
 #header {
-	height: 150px;
+	height: 100px;
 	width: 800px;
 	z-index: 2;
 	margin-left: auto;
@@ -117,8 +117,8 @@ body {
 	padding-right: 56px;
 	padding-bottom: 40px;
 	padding-left: 56px;
-	font-size: 12px;
-	line-height: 14px;
+	font-size: 18px;
+	line-height: 24px;
 	clear: both;
 }
 
@@ -230,13 +230,35 @@ margin: 0px;
 	font-size: 12px;
 }
 
+#nav li ul {
+    position: absolute;
+    margin-top: 15px;
+    padding-left: 0px;
+    padding-top: 20px;
+    margin-left: 0px;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    padding-bottom: 20px;
+    background-color: #361B01;
+}
+
+#nav li ul li{
+    color:#DFD1B4;
+    display: block; 
+}
+
+#nav li ul li a{
+    line-height: 40px;
+}
+
 #nav li ul li:hover{
     color:#DFD1B4;
 }
 
 #nav li:hover ul {
     display: block;
-    opacity: 1;
+    opacity: 1.0;
     visibility: visible;
 }
 
@@ -594,7 +616,9 @@ margin-top: 1em;
   padding-left: 25px;
 }
 .twitter {
-  background: url("img/socialicon32.png") no-repeat;
+  background: url("img/newsociallogo.png") no-repeat;
   background-size: 22px 22px;
   padding-left: 25px;
 }
+
+body { -webkit-font-smoothing: subpixel-antialiased; }

@@ -54,9 +54,9 @@ body {
 	margin-top: 50px;
 	min-height: 100%;
 	margin-bottom: 40px;
-	-webkit-box-shadow: 0px 0px 1000px 50px rgba(120,71,9,0.26);
-	box-shadow: 0px 0px 1000px 50px rgba(120,71,9,0.26);
-	background-color: hsla(40,53%,81%,0.40);
+	-webkit-box-shadow: 0px 0px 10px 10px rgba(120,71,9,0.26);
+	box-shadow: 0px 0px 10px 10px rgba(120,71,9,0.26);
+	background-color: hsla(40,53%,100%,0.45);
 }
 /*This last integer in the hsla is the opacity of the content box. enter in a decimal value between 1.0 and 0.00 to get 100 different brightnesses of content box background
 */
@@ -117,8 +117,8 @@ body {
 	padding-right: 56px;
 	padding-bottom: 40px;
 	padding-left: 56px;
-	font-size: 12px;
-	line-height: 14px;
+	font-size: 18px;
+	line-height: 24px;
 	clear: both;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 #sponsors {
-	background-color: hsla(0,0%,100%,1.00);
+	background-color: hsla(0,100%,100%,0);
 	padding-left: 6px;
 	padding-right: 6px;
 	padding-top: 6px;
@@ -145,18 +145,18 @@ h1 {
 
 
 h2 {
-	font-size: 1em;
+	font-size: 1.2em;
 	margin-bottom: 0px;
 	font-variant: normal;
 	font-weight:700
 }
 
-h3 {font-size: .8 em;
+h3 {font-size: 1em;
 	margin-bottom: 0px;
 	font-variant: normal;
 	font-weight:700}
 
-h4 {font-size: .7em;
+h4 {font-size: .8em;
 	margin-bottom: 0px;
 	font-variant: normal;
 	font-weight:700}
@@ -230,13 +230,35 @@ margin: 0px;
 	font-size: 12px;
 }
 
+#nav li ul {
+    position: absolute;
+    margin-top: 15px;
+    padding-left: 0px;
+    padding-top: 20px;
+    margin-left: 0px;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    padding-bottom: 20px;
+    background-color: #361B01;
+}
+
+#nav li ul li{
+    color:#DFD1B4;
+    display: block; 
+}
+
+#nav li ul li a{
+    line-height: 40px;
+}
+
 #nav li ul li:hover{
     color:#DFD1B4;
 }
 
 #nav li:hover ul {
     display: block;
-    opacity: 1;
+    opacity: 1.0;
     visibility: visible;
 }
 
@@ -392,12 +414,12 @@ tt{padding-left: 5px; padding-top: 5px}
     padding: 0;
     margin: 0;
     list-style: none;
-	vertical-align:middle;
+	 vertical-align:middle;
 }
  
 .css-treeview input
 {
-    position: absolute;
+    position: relative;
     opacity: 0;
 }
  
@@ -411,7 +433,6 @@ tt{padding-left: 5px; padding-top: 5px}
  
 .css-treeview a
 {
-    color: #00f;
     text-decoration: none;
 }
  
@@ -450,9 +471,7 @@ tt{padding-left: 5px; padding-top: 5px}
 .css-treeview label.folder,
 .css-treeview label.folder::before
 {
-    background: url("img/folder.png") no-repeat;
-	    height: 22px;
-
+	    min-height: 22px;
 }
  
 .css-treeview label,
@@ -475,15 +494,18 @@ tt{padding-left: 5px; padding-top: 5px}
 {
     content: "";
     width: 32px;
-    margin: 0 22px 0 0;
+    margin: 0 6px 0 0;
     vertical-align: middle;
     background-position: 0 -10px;
 }
  
 .css-treeview input.folder:checked + label.folder::before
 {
-    background: url("img/icons.png") no-repeat;
-    background-position: 0 6px;
+    content: "";
+    width: 16px;
+    margin: 0 6px 0 0;
+    vertical-align: middle;
+    background: url("img/close.png") no-repeat center;
 }
 
 
@@ -525,12 +547,10 @@ tt{padding-left: 5px; padding-top: 5px}
 {
     content: "";
     width: 16px;
-    margin: 0 22px 0 0;
+    margin: 0 6px 0 0;
     vertical-align: middle;
 	
-    background: url("img/icons.png") no-repeat;
-
-    background-position: 0 -10px;
+    background: url("img/open.png") no-repeat center;
 }
 .css-treeview label.doc, .css-treeview label.dl
 {
@@ -552,16 +572,56 @@ tt{padding-left: 5px; padding-top: 5px}
 }
 
 li.info {
-background:url(img/i_button.gif) no-repeat 0 5px; 
+/*background:url(img/i_button.gif) no-repeat 0 5px; 
 padding: 0 0 3px 22px;
-height: 22px;
+height: 22px;*/
+line-height: 100%;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 li.search {
-background:url(img/search.gif) no-repeat 0 5px; 
+/*background:url(img/search.gif) no-repeat 0 5px; 
 padding: 0 0 3px 22px;
-height: 22px;
+min-height: 22px;*/
+}
+li.download {
+/*min-height: 22px;
+padding: 0 0 3px 22px;*/
 }
 
 .example_queries li {
 margin-top: 1em;
+}
+
+.tree-container {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.about {
+  background: url("img/i_button.gif") no-repeat;
+  padding-left: 21px;
+}
+.search {
+  background: url("img/search.gif") no-repeat;
+  padding-left: 21px;
+}
+.download {
+  background: url("img/download.gif") no-repeat;
+  padding-left: 21px;
+}
+.github {
+  background: url("img/GitHub-Mark-32px.png") no-repeat;
+  background-size: 22px 22px;
+  padding-left: 25px;
+}
+.twitter {
+  background: url("img/newsociallogo.png") no-repeat;
+  background-size: 22px 22px;
+  padding-left: 25px;
+}
+
+body { -webkit-font-smoothing: subpixel-antialiased; }
+.small {
+	font-size: 14px;
 }

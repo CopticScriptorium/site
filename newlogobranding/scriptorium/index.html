@@ -7,6 +7,14 @@
 	<title>Coptic Scriptorium</title>
 	<link rel="stylesheet" href="scriptorium.css" type="text/css" charset="utf-8"/>
 <meta name="viewport" content="width=800">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script> 
+    $(function(){
+      $("#navbar").load("nav.html");
+      $("#topbanner").load("top.html");
+      $("#bottomcontent").load("bottom.html"); 
+    });
+</script> 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,21 +36,11 @@
 <body>
 
 
-<ul id="nav">
-  <li><a href="index.html">HOME</a></li>
-  <li><a href="tools.html">TOOLS</a></li>
-  <li><a href="corpora.html">CORPORA</a></li>
-  <li><a href="FAQ.html">DOCUMENTATION</a></li>
-  <li><a href="news.html">NEWS</a></li>
-   <li><a href="workshop2015/index.html">WORKSHOP</a></li>
-  <li><a href="about.html">ABOUT</a></li>
-</ul><div id="wrapper">
+<div id="navbar"></div>
 
-<div id="header">
-    <div id="copticlogo"><a href="index.html"><img src="img/copticlogo.png" width="210" height="101" alt="Coptic SCRIPTORIUM"/></a></div>
+<div id="wrapper">
 
-    <div id="unicorn"><a href="index.html"><img src="img/unicorn.png" width="80" height="101" alt="Unicorn"/></a></div>
-    <div id="englishlogo"><a href="index.html"><img src="img/englishlogo.png" width="199" height="101" alt="Coptic SCRIPTORIUM"/></a></div><img src="img/ruleline.png" width="800px" height="14" alt=""/></div>
+<div id="topbanner"></div>
 
   <div id="content">
   
@@ -77,13 +75,15 @@
     </div>
     <div class="rightcolumn">
       <h2>MEET UP IN MARCH!</h2>
-        Join us at our Digital Coptic workshop and symposium at  Georgetown University, March 12-13, 2015. <a href="workshop2015/index.html">Details and CFP here</a>.
+        <p>Join us at our Digital Coptic workshop and symposium at  Georgetown University, March 12-13, 2015. The event is free and open to the public. <a href="workshop2015/index.html">Program and registration information is here.</a>      </p>
+      <h2>MEET OUR MASCOT</h2>
+      <p><img src="img/PierpontMorganUnicornDetail_m581.010ra_xsm.jpg" width="320" height="226" alt="Pierpont Morgan Unicorn" border="1"/>We've updated our brand with a new logotype  and interpreted the unicorn from the <a href="http://corsair.themorgan.org/cgi-bin/Pwebrecon.cgi?SC=CallNumber&amp;SEQ=20140706123219&amp;PID=_ypu8IgXI8anIMTNU3GezV90EmX&amp;SA=MS+M.0581,+fol.+010r" title="Pierpont Morgan unicorn illustration link">M.0581</a> Manuscript at the Pierpont Morgan Library in New York as our mascot. What do you think? <a href="http://www.twitter.com/copticscript" title="scriptorium Twitter account" target="new">Weigh in on Twitter</a>.   [Image is a detail of <a href="http://corsair.themorgan.org/cgi-bin/Pwebrecon.cgi?SC=CallNumber&amp;SEQ=20140706123219&amp;PID=_ypu8IgXI8anIMTNU3GezV90EmX&amp;SA=MS+M.0581,+fol.+010r">MS M.0581, fol. 010r</a>, for non-commercial use only.]  The unicorn was originally painted in the 9th or 10th century by 
+        the copyist and illustrator Deacon Dioskoros in the Fayyum region of Egypt.  Our website, logo, and mascot were designed by <a href="http://www.modernphoenix.net/about.htm" title="Alison King website" target="_blank">Alison  King</a>, Assoc. Prof. of Graphic Design at the Art Institute of Phoenix and Founding Editor and Designer of <a href="http://www.modernphoenix.net" title="modern phoenix" target="_blank">Modern Phoenix</a>.
+      </p>
       <h2>NEW CORPUS ADDED</h2>
       <a href="https://corpling.uis.georgetown.edu/annis/scriptorium#_c=c2hlbm91dGUuZm94" target="_blank">Shenoute's Not Because a Fox Barks </a>(MONB.XH witness)
-was added in December 2014.
-<h2>MEET OUR MASCOT</h2>
-    <img src="img/PierpontMorganUnicornDetail_m581.010ra_xsm.jpg" width="320" height="226" alt="Pierpont Morgan Unicorn" border="1"/>We've updated our brand with a new logotype  and interpreted the unicorn from the ____ Manuscript at the Pierpont Morgan Library New York as our mascot. What do you think? <a href="#">Weigh in here</a> (link to whatever blog or social platform announces it).   [Image is a detail of <a href="http://corsair.themorgan.org/cgi-bin/Pwebrecon.cgi?SC=CallNumber&amp;SEQ=20140706123219&amp;PID=_ypu8IgXI8anIMTNU3GezV90EmX&amp;SA=MS+M.0581,+fol.+010r">MS M.0581, fol. 010r</a> available  <a href="http://corsair.morganlibrary.org/icaimages/5/m581.010ra.jpg" target="new">here</a>, for non-commercial use only.]
-    <h2>VIDEO</h2>
+was added in December 2014. 
+      <h2>VIDEO</h2>
       <a href="https://www.youtube.com/watch?v=JZW6oWHbwQU" target="new">We created a new video</a> introducing the project texts and data model, and how to use ANNIS in November 2014.		
       <h2>WORKSHOP ARCHIVE</h2>
       We hosted a workshop on digital research and scholarship in Coptic at Humboldt University on May 14, 2013. <a href="workshop2013/workshop2013.html">View the program and presentations here.</a>
@@ -92,18 +92,7 @@ was added in December 2014.
     
     </div>
   </div>
-  <div id="footer"><div id="sponsors">
-      <img alt="Seal of the University of the Pacific"  src="img/Seal_Orange_RGB.png" height="62px" longdesc="http://www.pacific.edu"/>&nbsp;&nbsp;&nbsp;<img src="img/Georgetown_university_seal.gif" width="52" height="62px" alt="GeorgetownUniversitySeal" longdesc="http://www.georgetown.edu"/>&nbsp;&nbsp;&nbsp;       <img src="img/nehlogo.png" width="252" height="62" alt="neh logo" longdesc="http://www.neh.gov"/></div>
-  
-	<br />
-	Coptic Scriptorium is supported by the <a href="http://www.neh.gov" target="_blank">National Endowment for the Humanities</a> <a href="http://www.neh.gov/divisions/odh" target="_blank">Office of Digital Humanities</a> and <a href="http://www.neh.gov/divisions/preservation" target="_blank">Division of Preservation and Access</a>, the <a href="www.pacific.edu" target="blank">University of the Pacific</a>, and <a href="http://www.georgetown.edu" target="_blank">Georgetown University</a>.<br /><br />
-    <a href="https://github.com/CopticScriptorium"><img src="img/GitHub-Mark-32px.png" alt="GitHub_mark" longdesc="www.github.com"/></a><a href="https://github.com/CopticScriptorium" target="new"> Fork us on GitHub</a>!<br />
-    	<br />
-        <a href="https://www.facebook.com/carrieschroeder1" target="_blank"><img src="img/socialicon32.png" width="32" height="32" alt=""/></a> Follow Carolyn on <a href="https://www.facebook.com/carrieschroeder1" target="_blank">Facebook</a> and <a href="https://twitter.com/ctschroeder" target="_blank">Twitter</a><br />
-    	<br />
-	Page last updated 19 December 2014
-    
-  </div>
+  <div id="bottomcontent"></div>
     
 </div>
 

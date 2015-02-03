@@ -622,3 +622,6 @@ margin-top: 1em;
 }
 
 body { -webkit-font-smoothing: subpixel-antialiased; }
+.small {
+	font-size: 14px;
+}
